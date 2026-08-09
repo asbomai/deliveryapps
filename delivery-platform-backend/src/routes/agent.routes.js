@@ -7,7 +7,7 @@ const role = require('../middleware/role.middleware');
 const User = require('../models/User');
 const Item = require('../models/Item');
 
-// ✅ AGENT VERIFY ROUTE
+//  AGENT VERIFY ROUTE
 router.post('/verify/:itemId', async (req, res) => {
   const item = await Item.findOneAndUpdate(
     { itemId: req.params.itemId },
